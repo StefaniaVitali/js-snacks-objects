@@ -1,6 +1,7 @@
 console.log('Jsnack-object')
 
 //JSNACK 3
+console.log('js-snack3')
 
 /*
 Crea un array di oggetti che rappresentano degli animali.
@@ -74,7 +75,7 @@ const animals = [
     {
         nome: 'oca',
         famiglia:'anatide',
-        classe:'uccelli',
+        classe:'uccello',
     
     },
 
@@ -83,6 +84,7 @@ const animals = [
 console.log(animals);
 
 //per una questione di ordine avrei potuto scriverli come nell'esempio 
+// tipo così:  { nome: ‘leone’, famiglia: ‘felidi’, classe: ‘mammiferi’ }
 
 //Crea un array per i mammiferi.
 
@@ -103,7 +105,64 @@ for (let i = 0; i < animals.length; i++) {
   //---allora pushiamo l'elemento nell'array mammiferi
 
   console.log(mammiferi)
+
+
+  //JS SNACK 4
+
+  console.log('js-snack4')
+
+  /*
+  Crea un array di oggetti che rappresentano delle persone.
+Ogni persona ha un nome, un cognome e un’età.
+Crea quindi un nuovo array inserendo, per ogni persona, una frase con il
+nome e cognome e l’indicazione se può guidare, in base all’età.
+Javascript - JS
+JSnack 4
+   */
   
+//Creare un array di persone con cognome ed età
+
+const persone = [
+    {
+      nome:'Marco',
+      cognome:'Palla',
+      età: '12'
+
+    },
+    {
+        nome:'Marzia',
+        cognome:'Porta',
+        età: '45'
+  
+      },
+      {
+        nome:'Guido',
+        cognome:'Scorza',
+        età: '58'
+  
+      },
+      {
+        nome:'Luisa',
+        cognome:'Marconi',
+        età: '18'
+  
+      },
+      {
+        nome:'Paolo',
+        cognome:'Paolucci',
+        età: '15'
+  
+      },
+
+];
+
+console.log(persone)
+
+//creare un secondo array con una frase con nome cognome e se può guidare
+const drivers = [];
+
+
+
 
 
 
