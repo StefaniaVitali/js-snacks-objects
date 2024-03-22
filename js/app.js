@@ -161,6 +161,17 @@ console.log(persone)
 //creare un secondo array con una frase con nome cognome e se può guidare
 const drivers = [];
 
+//creare un ciclo for 
+for(let i = 0; i<persone.length; i++){
+    const persona = persone[i];
+    console.log(persona)
+}
+
+//SE l'età è uguale o maggiore di 18
+//allora lo pushiamo nel nuovo array con la frase può gridare
+
+
+
 
 
 
