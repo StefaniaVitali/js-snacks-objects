@@ -122,35 +122,35 @@ JSnack 4
   
 //Creare un array di persone con cognome ed età
 
-const persone = [
+let persone = [
     {
       nome:'Marco',
       cognome:'Palla',
-      età: '12'
+      eta: '12'
 
     },
     {
         nome:'Marzia',
         cognome:'Porta',
-        età: '45'
+        eta: '45'
   
       },
       {
         nome:'Guido',
         cognome:'Scorza',
-        età: '58'
+        eta: '58'
   
       },
       {
         nome:'Luisa',
         cognome:'Marconi',
-        età: '18'
+        eta: '18'
   
       },
       {
         nome:'Paolo',
         cognome:'Paolucci',
-        età: '15'
+        eta: '15'
   
       },
 
@@ -160,15 +160,43 @@ console.log(persone)
 
 //creare un secondo array con una frase con nome cognome e se può guidare
 const drivers = [];
+const puoGuidare = [];
+const nonPuoGuidare = [];
 
 //creare un ciclo for 
 for(let i = 0; i<persone.length; i++){
-    const persona = persone[i];
+   let persona = persone[i];
     console.log(persona)
+
+    //SE l'età è uguale o maggiore di 18
+    if(persona.eta >=18){
+      puoGuidare.push(`${persona.nome} ${persona.cognome} può guidare`)        
+      
+    }else if (persona.eta <18) {
+        nonPuoGuidare.push(`${persona.nome} ${persona.cognome}  non può guidare`)   
+    }
+}
+// console.log(puoGuidare)
+
+for(let i = 0; i<puoGuidare.length; i++){
+    const guidatore = puoGuidare[i]
+    console.log (guidatore)
+    drivers.push(guidatore)
 }
 
-//SE l'età è uguale o maggiore di 18
-//allora lo pushiamo nel nuovo array con la frase può gridare
+// console.log(nonPuoGuidare)
+for(let i = 0; i<nonPuoGuidare.length; i++){
+    const nonGuidatore = nonPuoGuidare[i]
+    console.log (nonGuidatore)
+    drivers.push(nonGuidatore)
+}
+
+console.log(drivers)
+
+
+
+
+
 
 
 
